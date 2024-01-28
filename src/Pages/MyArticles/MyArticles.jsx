@@ -11,7 +11,7 @@ const MyArticles = () => {
     }, [])
 
     const articleMy = async () => {
-        const response = await axios.get('http://localhost:5000/add');
+        const response = await axios.get('https://the-final-project-server-bt878edsc-maliksakin53gmailcom.vercel.app/add');
         setData(response.data)
     }
 

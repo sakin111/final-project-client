@@ -11,7 +11,7 @@ const First = () => {
     
       const fetchTrendingArticles = async () => {
         try {
-          const response = await axios.get('https://the-final-project-server-bt878edsc-maliksakin53gmailcom.vercel.app/first');
+          const response = await axios.get('http://localhost:5000/first');
           setTrend(response.data);
         } catch (error) {
           console.error('Error fetching trending articles:', error);
